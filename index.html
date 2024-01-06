@@ -143,9 +143,21 @@
                                 <td>
                                     <div class="news">
 										<div class="biog">
+                                            <div>
+                                                <span style="font-weight:normal"><span class="caption">20 December 2023,&nbsp;</span>My manuscript entitled "EvadeDroid: A practical evasion attack on machine learning for black-box Android malware detection, " has been accepted by the Computers & Security Journal.</span>
+                                            </div>
+                                        </div>
+										<div class="biog">
+											<div>
+                                                <span style="font-weight:normal"><span class="caption">28 Ocotober 2023,&nbsp;</span> The paper I co-authored, titled "Targeted and Troublesome: Tracking and Advertising on Children's Websites," has been accepted at the 45th IEEE Symposium on Security and Privacy (IEEE S&P'24).</span>
+                                            </div>
+										</div>
+										<div class="biog">
 											<div>
                                                 <span style="font-weight:normal"><span class="caption">2 Ocotober 2023,&nbsp;</span> I will visit King's College London and University College London for 6 months and work on Adversarial Training under the supervision of Dr. <a href='https://fabio.pierazzi.com/' target='_blank'>Fabio Pierazzi</a> and Prof. <a href='https://s2lab.cs.ucl.ac.uk/people/sullivan/' target='_blank'>Lorenzo Cavallaro</a>.</span>
                                             </div>
+										</div>
+										<div class="biog">
                                             <div>
                                                 <span style="font-weight:normal"><span class="caption">20 April 2023,&nbsp;</span>I attend <a href='https://www.ictopen.nl/' target='_blank'>ICT.OPEN2023</a>, Utrecht, The Netherlands to present my poster entitled "Improving Robustness of Machine Learning-based Android Malware Detection against Realizable Adversarial Examples.</span>
                                             </div>
@@ -158,7 +170,7 @@
                                         <br />
 										<div class="biog">
                                             <div>
-                                                <span style="font-weight:normal"><span class="caption">14 January  2022,&nbsp;</span>My book chapter entitled "Hybrid and modified OPFs for intrusion detection systems and large-scale problems" is published as Chapter 5 of Elsevier's book, Optimum-Path Forest: Theory, Algorithms, and Applications.</span>
+                                                <span style="font-weight:normal"><span class="caption">14 January  2022,&nbsp;</span>My book chapter entitled "Hybrid and modified OPFs for intrusion detection systems and large-scale problems, " is published as Chapter 5 of Elsevier's book, Optimum-Path Forest: Theory, Algorithms, and Applications.</span>
                                             </div>
                                         </div>
                                         <br />
@@ -170,7 +182,7 @@
                                         <br />
                                         <div class="biog">
                                             <div>
-                                                <span style="font-weight:normal"><span class="caption">23 August 2020,&nbsp;</span>My manuscript entitled "A Strong Coreset Algorithm to Accelerate OPF as a Graph-based Machine Learning in Large-Scale Problems" has been accepted by the Information Sciences Journal with a minor revision.</span>
+                                                <span style="font-weight:normal"><span class="caption">23 August 2020,&nbsp;</span>My manuscript entitled "A Strong Coreset Algorithm to Accelerate OPF as a Graph-based Machine Learning in Large-Scale Problems, " has been accepted by the Information Sciences Journal with a minor revision.</span>
                                             </div>
                                         </div>
                                     </div>
@@ -401,23 +413,40 @@
                         <tr>
                             <td style="width:100%">
                                 <div class="project">
-									<div class="year">2022</div>
-                                       <div class="biog">
-                                            <div>
-                                                <div style="padding-left:20px">
-                                                    <div class="paper_title">Chapter 5 - Hybrid and modified OPFs for intrusion detection systems and large-scale problems</div>
-                                                    <div class="paper_author">M. Sheikhan, H. Bostani</div>
-                                                    <div class="paper_journal">In Optimum-Path Forest, pp. 109-136, Academic Press, Elsevier, 2022.</div>
-													<div class="paper_link"><a href="https://doi.org/10.1016/B978-0-12-822688-9.00013-X" target="_blank">DOI: 10.1016/B978-0-12-822688-9.00013-X</a></div>
-                                                    <div class="paper_abstract openNew"><a style="font-weight:bold;cursor: pointer;">[Abstract]</a></div>
-                                                    <div class="paper_abstract_text">
-                                                        In this chapter, in order to show the efficiency of OPF in the intrusion detection systems (IDSs) and also in the large-scale problems, we introduce five hybrid and modified OPFs as follows: (a) a modified OPF using unsupervised learning and social network concept; (b) a hybrid IDS using unsupervised OPF based on MapReduce approach; (c) a hybrid IDS using a modified OPF (MOPF) and selected input features; (d) a modified OPF using Markov cluster process algorithm; and (e) a modified OPF based on the coreset concept. Furthermore, the MOPF-based IDS is improved in the last section as a contribution by using an outperformed clustering algorithm.
-                                                    </div>
-                                                </div>
-                                                <br />
-                                            </div>
+								<div class="year">2023</div>
+									<div class="biog">
+										<div>
+											<div style="padding-left:20px">
+												<div class="paper_title">EvadeDroid: A practical evasion attack on machine learning for black-box Android malware detection</div>
+												<div class="paper_author">H. Bostani and V. Moonsamy</div>
+												<div class="paper_journal">Computers & Security, vol. 139, pp. 1–18, 2024</div>
+												<div class="paper_link"><a href="https://doi.org/10.1016/j.cose.2023.103676" target="_blank">DOI: 10.1016/j.cose.2023.103676</a></div>
+												<div class="paper_abstract openNew"><a style="font-weight:bold;cursor: pointer;">[Abstract]</a></div>
+												<div class="paper_abstract_text">
+													Over the last decade, researchers have extensively explored the vulnerabilities of Android malware detectors to adversarial examples through the development of evasion attacks; however, the practicality of these attacks in real-world scenarios remains arguable. The majority of studies have assumed attackers know the details of the target classifiers used for malware detection, while in reality, malicious actors have limited access to the target classifiers. This paper introduces EvadeDroid, a problem-space adversarial attack designed to effectively evade black-box Android malware detectors in real-world scenarios. EvadeDroid constructs a collection of problem-space transformations derived from benign donors that share opcode-level similarity with malware apps by leveraging an n-gram-based approach. These transformations are then used to morph malware instances into benign ones via an iterative and incremental manipulation strategy. The proposed manipulation technique is a query-efficient optimization algorithm that can find and inject optimal sequences of transformations into malware apps. Our empirical evaluations, carried out on 1K malware apps, demonstrate the effectiveness of our approach in generating real-world adversarial examples in both soft- and hard-label settings. Our findings reveal that EvadeDroid can effectively deceive diverse malware detectors that utilize different features with various feature types. Specifically, EvadeDroid achieves evasion rates of 80%–95% against DREBIN, Sec-SVM, ADE-MA, MaMaDroid, and Opcode-SVM with only 1–9 queries. Furthermore, we show that the proposed problem-space adversarial attack is able to preserve its stealthiness against five popular commercial antiviruses with an average of 79% evasion rate, thus demonstrating its feasibility in the real world.
+												</div>
+											</div>
+											<br />
+										</div>
 
-                                        </div>									
+									</div>
+								<div class="year">2022</div>
+								   <div class="biog">
+										<div>
+											<div style="padding-left:20px">
+												<div class="paper_title">Chapter 5 - Hybrid and modified OPFs for intrusion detection systems and large-scale problems</div>
+												<div class="paper_author">M. Sheikhan, H. Bostani</div>
+												<div class="paper_journal">In Optimum-Path Forest, pp. 109-136, Academic Press, Elsevier, 2022.</div>
+												<div class="paper_link"><a href="https://doi.org/10.1016/B978-0-12-822688-9.00013-X" target="_blank">DOI: 10.1016/B978-0-12-822688-9.00013-X</a></div>
+												<div class="paper_abstract openNew"><a style="font-weight:bold;cursor: pointer;">[Abstract]</a></div>
+												<div class="paper_abstract_text">
+													In this chapter, in order to show the efficiency of OPF in the intrusion detection systems (IDSs) and also in the large-scale problems, we introduce five hybrid and modified OPFs as follows: (a) a modified OPF using unsupervised learning and social network concept; (b) a hybrid IDS using unsupervised OPF based on MapReduce approach; (c) a hybrid IDS using a modified OPF (MOPF) and selected input features; (d) a modified OPF using Markov cluster process algorithm; and (e) a modified OPF based on the coreset concept. Furthermore, the MOPF-based IDS is improved in the last section as a contribution by using an outperformed clustering algorithm.
+												</div>
+											</div>
+											<br />
+										</div>
+
+									</div>									
 								<div class="year">2020</div>
                                         <div class="biog">
                                             <div>
