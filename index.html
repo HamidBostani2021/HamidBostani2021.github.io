@@ -111,7 +111,7 @@
                                         My primary research interest is investigating AI in systems security because I strongly feel that AI is a promising problem solver that can obtain satisfying solutions for complex problems. Indeed, the main area of my research is at the intersection of machine learning and systems security by concentrating on intrusion & malware detection.
                                         <br />
                                         <br />
-                                        My current research focus is adversarial machine learning in the area of malware detection, which I am working on under the supervision of Prof. <a href="https://www.veelasha.org/" target="_blank">Veelasha Moonsamy</a>.
+                                        My current research focus is adversarial machine learning in the area of malware detection, which I am working on under the supervision of Prof. <a href="https://www.veelasha.org/" target="_blank">Veelasha Moonsamy</a> and Dr. <a href="https://www.cs.ru.nl/~erikpoll/" target="_blank">Erik Poll</a>.
                                         <br />
                                         <br />
                                         Previously, I was a Research Assistant at Islamic Azad University (IAU), South Tehran Branch who was working on AI, particularly scalable machine learning. My considerable background in AI began on my master's project while I was trying to present an AI-based intrusion detection system for IoT that could detect various security threats.
@@ -371,7 +371,7 @@
                                 <div class="certificate" style="min-height: 240px;">
                                     <div class="biog">
                                         <div>
-                                            <span class="caption">&nbsp;&nbsp;Fully-Funded Fellowship, <span style="font-weight:normal">Radboud University (2020)</span></span>
+                                            <span class="caption">&nbsp;&nbsp;Fully-Funded PhD Fellowship, <span style="font-weight:normal">Radboud University (2020)</span></span>
                                         </div>
                                     </div>
                                     <div class="biog">
@@ -433,6 +433,69 @@
                         <tr>
                             <td style="width:100%">
                                 <div class="project">
+									<div class="year">Pre-prints</div>
+									<div class="biog">
+										<div>
+											<div style="padding-left:20px">
+												<div class="paper_title">Coresets for Adversarially Robust Malware Detection: Opportunities and Challenges</div>
+												<div class="paper_author">H. Bostani and V. Moonsamy</div>
+												<div class="paper_journal">Under peer review (2025)</div>												
+												<div class="paper_abstract openNew"><a style="font-weight:bold;cursor: pointer;">[Abstract]</a></div>
+												<div class="paper_abstract_text">
+													Enhancing the adversarial robustness of machine learning models for malware detection often involves refining algorithms or improving data quality. This paper highlights the transformative potential of coreset techniques to enhance data quality and tackle adversarial vulnerabilities. We argue that leveraging coresets can be a game-changer in building more resilient malware classifiers by promoting robust feature learning and minimizing their susceptibility to adversarial attacks..
+												</div>
+											</div>
+											<br />
+										</div>
+
+									</div>
+									<div class="biog">
+										<div>
+											<div style="padding-left:20px">
+												<div class="paper_title">On the Effectiveness of Adversarial Training on Malware Classifiers</div>
+												<div class="paper_author">H. Bostani, J. Cortellazzi, D. Arp, F. Pierazzi, V. Moonsamy and L. Cavallaro</div>
+												<div class="paper_journal">Under peer review (2024).</div>
+												<div class="paper_link"><a href="https://arxiv.org/abs/2412.18218" target="_blank">https://arxiv.org/abs/2412.18218</a></div>
+												<div class="paper_abstract openNew"><a style="font-weight:bold;cursor: pointer;">[Abstract]</a></div>
+												<div class="paper_abstract_text">
+													Adversarial Training (AT) has been widely applied to harden learning-based classifiers against adversarial evasive attacks. However, its effectiveness in identifying and strengthening vulnerable areas of the model's decision space while maintaining high performance on clean data of malware classifiers remains an under-explored area. In this context, the robustness that AT achieves has often been assessed against unrealistic or weak adversarial attacks, which negatively affect performance on clean data and are arguably no longer threats. Previous work seems to suggest robustness is a task-dependent property of AT. We instead argue it is a more complex problem that requires exploring AT and the intertwined roles played by certain factors within data, feature representations, classifiers, and robust optimization settings, as well as proper evaluation factors, such as the realism of evasion attacks, to gain a true sense of AT's effectiveness. In our paper, we address this gap by systematically exploring the role such factors have in hardening malware classifiers through AT. Contrary to recent prior work, a key observation of our research and extensive experiments confirm the hypotheses that all such factors influence the actual effectiveness of AT, as demonstrated by the varying degrees of success from our empirical analysis. We identify five evaluation pitfalls that affect state-of-the-art studies and summarize our insights in ten takeaways to draw promising research directions toward better understanding the factors' settings under which adversarial training works at best. 
+												</div>
+											</div>
+											<br />
+										</div>
+									</div>
+								<div class="year">2024</div>
+									<div class="biog">
+										<div>
+											<div style="padding-left:20px">
+												<div class="paper_title">Level Up with ML Vulnerability Identification: Leveraging Domain Constraints in Feature Space for Robust Android Malware Detection</div>
+												<div class="paper_author">H. Bostani, Z. Zhao, Z. Liu, and V. Moonsamy</div>
+												<div class="paper_journal">ACM Transactions on Privacy and Security (TOPS)</div>
+												<div class="paper_link"><a href="https://arxiv.org/abs/2205.15128" target="_blank">https://arxiv.org/abs/2205.15128</a></div>
+												<div class="paper_abstract openNew"><a style="font-weight:bold;cursor: pointer;">[Abstract]</a></div>
+												<div class="paper_abstract_text">
+													Machine Learning (ML) promises to enhance the efficacy of Android Malware Detection (AMD); however, ML models are vulnerable to realistic evasion attacks--crafting realizable Adversarial Examples (AEs) that satisfy Android malware domain constraints. To eliminate ML vulnerabilities, defenders aim to identify susceptible regions in the feature space where ML models are prone to deception. The primary approach to identifying vulnerable regions involves investigating realizable AEs, but generating these feasible apps poses a challenge. For instance, previous work has relied on generating either feature-space norm-bounded AEs or problem-space realizable AEs in adversarial hardening. The former is efficient but lacks full coverage of vulnerable regions while the latter can uncover these regions by satisfying domain constraints but is known to be time-consuming. To address these limitations, we propose an approach to facilitate the identification of vulnerable regions. Specifically, we introduce a new interpretation of Android domain constraints in the feature space, followed by a novel technique that learns them. Our empirical evaluations across various evasion attacks indicate effective detection of AEs using learned domain constraints, with an average of 89.6%. Furthermore, extensive experiments on different Android malware detectors demonstrate that utilizing our learned domain constraints in Adversarial Training (AT) outperforms other AT-based defenses that rely on norm-bounded AEs or state-of-the-art non-uniform perturbations. Finally, we show that retraining a malware detector with a wide variety of feature-space realizable AEs results in a 77.9% robustness improvement against realizable AEs generated by unknown problem-space transformations, with up to 70x faster training than using problem-space realizable AEs.
+												</div>
+											</div>
+											<br />
+										</div>
+
+									</div>
+									<div class="biog">
+										<div>
+											<div style="padding-left:20px">
+												<div class="paper_title">Improving Adversarial Robustness in Android Malware Detection by Reducing the Impact of Spurious Correlations</div>
+												<div class="paper_author">Hamid Bostani, Zhengyu Zhao, and Veelasha Moonsamy</div>
+												<div class="paper_journal">ESORICS 2024 International Workshops</div>
+												<div class="paper_link"><a href="https://arxiv.org/abs/2408.16025" target="_blank">https://arxiv.org/abs/2408.16025</a></div>
+												<div class="paper_abstract openNew"><a style="font-weight:bold;cursor: pointer;">[Abstract]</a></div>
+												<div class="paper_abstract_text">
+													Machine learning (ML) has demonstrated significant advancements in Android malware detection (AMD); however, the resilience of ML against realistic evasion attacks remains a major obstacle for AMD. One of the primary factors contributing to this challenge is the scarcity of reliable generalizations. Malware classifiers with limited generalizability tend to overfit spurious correlations derived from biased features. Consequently, adversarial examples (AEs), generated by evasion attacks, can modify these features to evade detection. In this study, we propose a domain adaptation technique to improve the generalizability of AMD by aligning the distribution of malware samples and AEs. Specifically, we utilize meaningful feature dependencies, reflecting domain constraints in the feature space, to establish a robust feature space. Training on the proposed robust feature space enables malware classifiers to learn from predefined patterns associated with app functionality rather than from individual features. This approach helps mitigate spurious correlations inherent in the initial feature space. Our experiments conducted on DREBIN, a renowned Android malware detector, demonstrate that our approach surpasses the state-of-the-art defense, Sec-SVM, when facing realistic evasion attacks. In particular, our defense can improve adversarial robustness by up to 55% against realistic evasion attacks compared to Sec-SVM. 
+												</div>
+											</div>
+											<br />
+										</div>
+									</div>
 								<div class="year">2023</div>
 									<div class="biog">
 										<div>
@@ -444,6 +507,22 @@
 												<div class="paper_abstract openNew"><a style="font-weight:bold;cursor: pointer;">[Abstract]</a></div>
 												<div class="paper_abstract_text">
 													Over the last decade, researchers have extensively explored the vulnerabilities of Android malware detectors to adversarial examples through the development of evasion attacks; however, the practicality of these attacks in real-world scenarios remains arguable. The majority of studies have assumed attackers know the details of the target classifiers used for malware detection, while in reality, malicious actors have limited access to the target classifiers. This paper introduces EvadeDroid, a problem-space adversarial attack designed to effectively evade black-box Android malware detectors in real-world scenarios. EvadeDroid constructs a collection of problem-space transformations derived from benign donors that share opcode-level similarity with malware apps by leveraging an n-gram-based approach. These transformations are then used to morph malware instances into benign ones via an iterative and incremental manipulation strategy. The proposed manipulation technique is a query-efficient optimization algorithm that can find and inject optimal sequences of transformations into malware apps. Our empirical evaluations, carried out on 1K malware apps, demonstrate the effectiveness of our approach in generating real-world adversarial examples in both soft- and hard-label settings. Our findings reveal that EvadeDroid can effectively deceive diverse malware detectors that utilize different features with various feature types. Specifically, EvadeDroid achieves evasion rates of 80%–95% against DREBIN, Sec-SVM, ADE-MA, MaMaDroid, and Opcode-SVM with only 1–9 queries. Furthermore, we show that the proposed problem-space adversarial attack is able to preserve its stealthiness against five popular commercial antiviruses with an average of 79% evasion rate, thus demonstrating its feasibility in the real world.
+												</div>
+											</div>
+											<br />
+										</div>
+
+									</div>
+									<div class="biog">
+										<div>
+											<div style="padding-left:20px">
+												<div class="paper_title">Targeted and Troublesome: Tracking and Advertising on Children's Websites</div>
+												<div class="paper_author">Z. Moti, A. Senol, H. Bostani, F. Zuiderveen Borgesius, V. Moonsamy, A. Mathur, and G. Acar</div>
+												<div class="paper_journal">Proceedings of the 45th IEEE Symposium on Security and Privacy (IEEE S&P 2024)</div>
+												<div class="paper_link"><a href="https://doi.org/10.1109/SP54263.2024.00118" target="_blank">DOI: 10.1109/SP54263.2024.00118</a></div>
+												<div class="paper_abstract openNew"><a style="font-weight:bold;cursor: pointer;">[Abstract]</a></div>
+												<div class="paper_abstract_text">
+													On the modern web, trackers and advertisers frequently construct and monetize users’ detailed behavioral profiles without consent. Despite various studies on web tracking mechanisms and advertisements, there has been no rigorous study focusing on websites targeted at children. To address this gap, we present a measurement of tracking and (targeted) advertising on websites directed at children. Motivated by the lack of a comprehensive list of child-directed (i.e., targeted at children) websites, we first build a multilingual classifier based on web page titles and descriptions. Applying this classifier to over two million pages from the Common Crawl dataset, we compile a list of two thousand child-directed websites. Crawling these sites from five vantage points, we measure the prevalence of trackers, fingerprinting scripts, and advertisements. Our crawler detects ads displayed on child-directed websites and determines if ad targeting is enabled by scraping ad disclosure pages whenever available. Our results show that around 90% of child-directed websites embed one or more trackers, and about 27% contain targeted advertisements—a practice that should require verifiable parental consent. Next, we identify improper ads on child-directed websites by developing an ML pipeline that processes both images and text extracted from ads. The pipeline allows us to run semantic similarity queries for arbitrary search terms, revealing ads that promote services related to dating, weight loss, and mental health, as well as ads for sex toys and flirting chat services. Some of these ads feature repulsive, sexually-explicit and highly-inappropriate imagery. In summary, our findings indicate a trend of non-compliance with privacy regulations and troubling ad safety practices among many advertisers and child-directed websites. To ensure the protection of children and create a safer online environment, regulators and stakeholders must adopt and enforce more stringent measures. 
 												</div>
 											</div>
 											<br />
